@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Better Randomizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Better Randomizer (Suck it Wikidot)</h1>
+    <p class="subtitle">Pick a random SCP, Tale, or GoI page.</p>
+
+    <div class="button-row">
+      <button id="random-scp-btn">Random SCP</button>
+      <button id="random-tale-btn">Random Tale</button>
+      <button id="random-goi-btn">Random GoI</button>
+    </div>
+
+    <p id="status" class="status">Loading data...</p>
+
+    <section id="result-card" class="card hidden">
+      <p class="type" id="result-type"></p>
+      <h2 id="result-title"></h2>
+
+      <div class="meta">
+        <p id="result-scp-number" class="hidden"></p>
+        <p id="result-rating"></p>
+      </div>
+
+      <div>
+        <h3>Tags</h3>
+        <div id="result-tags" class="tags"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
